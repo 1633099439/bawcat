@@ -1,0 +1,28 @@
+server:
+  port: 11111
+  servlet:
+    context-path: /tx
+# Actuator 监控端口号与上下文路径  
+management:
+  server:
+    port: 9999
+    servlet:
+      context-path: /th
+# 指定监控终端的基本路径，默认为/Actuator
+  endpoints:
+    web:
+      base-path: /base
+      exposure:
+        exclude:
+        - evn
+        - beans
+        include: 
+        - '*' # 开放所有控制终端
+        # include['env','bean'] 开放指定终端
+# 自定义info信息
+      
+# 从pom文件中读取相应的值
+
+
+
+
